@@ -1,0 +1,88 @@
+body {
+  min-width:40em;
+  background: white;
+  font-family:sans-serif;
+}
+.progress {
+  margin-bottom:1em;
+}
+
+.progress-header {
+  width:100%;
+  overflow: auto;
+}
+
+.progress-header-name {
+  display:block;
+  float:left;
+  font-style:italic;
+}
+
+.progress-header-path {
+  display:block;
+  float:left;
+  margin-left:1em;
+  font-family:monospace;
+}
+
+.progress-header-total {
+  display:block;
+  float:right;
+}
+
+.progress-bar {
+  width:100%;
+  border:0.1em solid black;
+  height: 3em;
+  /*Gradient*/
+  background: #00ff00;
+  background: -moz-linear-gradient(left, #00ff00 0%, #fffa00 38%, #ff8000 66%, #ff0000 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,#00ff00), color-stop(38%,#fffa00), color-stop(66%,#ff8000), color-stop(100%,#ff0000));
+  background: -webkit-linear-gradient(left, #00ff00 0%,#fffa00 38%,#ff8000 66%,#ff0000 100%);
+  background: -o-linear-gradient(left, #00ff00 0%,#fffa00 38%,#ff8000 66%,#ff0000 100%);
+  background: -ms-linear-gradient(left, #00ff00 0%,#fffa00 38%,#ff8000 66%,#ff0000 100%);
+  background: linear-gradient(to right, #00ff00 0%,#fffa00 38%,#ff8000 66%,#ff0000 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ff00', endColorstr='#ff0000',GradientType=1 );
+}
+
+.progress-bar-used {
+  height:100%;
+  float:left;
+  text-align:center;
+}
+
+.progress-bar-used-text-percentage {
+  height:50%;
+  display:block;
+  font-size:1.2em;
+  font-weight:bold; 
+}
+
+.progress-bar-used-text {
+  height:50%;
+  display:block;
+}
+
+.progress-bar-free {
+  background: white;
+  height:100%;
+  text-align:center;
+}
+
+.progress-bar-free-text-percentag {
+  height:50%;
+  display:block;
+  font-size:1.2em;
+  font-weight:bold;
+}
+
+.progress-bar-free-text {
+  height:50%;
+  display:block;
+}
+
+.error {
+  margin-bottom:2em;
+  clear:both;
+  color:gray;
+}
